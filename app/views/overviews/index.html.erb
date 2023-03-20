@@ -1,0 +1,94 @@
+<style>
+.sidebar-wrap {
+    height: 1850px;
+    z-index: 998;
+  }
+  .footer{left: 0}
+  .btn_hover_area{
+    height: 100%;
+    width: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 997;
+  }
+  .btn_hover_area:hover ~ .sidebar_toggle_btn1,.sidebar-wrap:hover ~ .sidebar_toggle_btn2{
+    display: block;
+  }
+  .sidebar_toggle_btn1,.sidebar_toggle_btn2{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    z-index: 999;
+    height: 200px;
+    width: 24px;
+    border-radius: 0 8px 8px 0;
+    background: linear-gradient(0deg, #6471FF 0%, #4E8DE4 100%);
+    color: #fff;
+    line-height: 200px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    display: none;
+  }
+  .sidebar_toggle_btn1:hover,.sidebar_toggle_btn2:hover{display: block}
+  .sidebar_toggle_btn2{
+    left: 240px;
+  }
+  .main-container {
+    min-width: 1440px;
+    margin-left: 0;
+  }
+
+  .switch_bar_wrap {
+      height: 60px;
+      border: 1px solid #5189E8;
+      border-radius: 6px;
+      overflow: hidden;
+      display: inline-block;
+      margin-top: 20px;
+  }
+
+  .switch_bar_wrap .bar {
+      font-size: 20px;
+      display: inline-block;
+      line-height: 60px;
+      /*padding: 0 16px;*/
+      cursor: pointer;
+      width: 184px;
+      text-align: center;
+      font-weight: bolder;
+  }
+  .switch_bar_wrap .bar.active{
+      background-color: #5189E8;
+      color: #FFF;
+  }
+  /*.main-container .block{*/
+  /*    display: none;*/
+  /*}*/
+  /*.main-container .block.active{*/
+  /*    display: block;*/
+  /*}*/
+  .overview_wrap {
+      background-color: pink;
+      margin: auto;
+      width: 800px;
+      text-align: center;
+  }
+
+  .overview_wrap a {
+      background-color: #fff;
+  }
+</style>
+
+<!--
+<h1 class= "overview_wrap text-center"> Welcome to Ender's Book </h1>
+-->
+<div class="jumbotron overview_wrap">
+  <h1 class="display-4">Welcome to Here!</h1>
+  <p class="lead text-center">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>

@@ -1,0 +1,234 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+body {
+    padding-top: 60px;
+}
+section {
+    overflow: auto; 
+}
+textarea {
+    resize: vertical; 
+}
+.center {
+    text-align: center;
+}
+.center h1 {
+    margin-bottom: 10px; 
+}
+
+/* header */
+.header-layout {
+  margin-top: 0px;
+  position: fixed;
+  z-index: 2003;
+  height: 90px;
+  right: 0px;
+  left: 0px;
+  background: lightblue;
+}
+
+.header-layout .header-title-wrap {
+  width: 240px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-layout .header-title-wrap .header-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  padding-top: 28px;
+}
+
+.header-layout .header-title-wrap .slogan {
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding-top: 11px;
+}
+
+.header-layout .menu-wrap {
+    display: inline-block;
+    height: 90px;
+    vertical-align: top;
+}
+.header-layout .menu-wrap .dropdown{
+    width: 60px;
+    height: 90px;
+    position: relative;
+    float: left;
+}
+.header-layout .menu-wrap .dropdown a{
+    display: inline-block;
+    vertical-align: top;
+    height: 90px;
+    width: 60px;
+    cursor: pointer;
+    color: #FFF;
+    line-height: 90px;
+}
+.header-layout .menu-wrap .dropdown-menu{
+    width: 60px!important;
+    min-width: 0;
+    font-size: 0!important;
+}
+.header-layout .menu-wrap .default-menu .dropdown-menu >li a{
+    width: 58px;
+    height: 58px!important;
+    line-height: 58px;
+    padding-left: 14px;
+}
+.header-layout .menu-wrap .default-menu .dropdown-menu li i{
+    font-size: 30px;
+    color:#999999;
+}
+.header-layout .menu-wrap .default-menu .dropdown-menu li span{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    line-height: 58px;
+    height: 58px;
+    padding: 0 30px 0 20px;
+    text-align: center;
+    display: none;
+    vertical-align: top;
+}
+
+.header-layout .menu-wrap .dropdown-menu li:hover i{
+    color: #FFF;
+}
+.header-layout .menu-wrap .dropdown-menu li:hover a{
+    background: #47A0EB;
+    width: auto;
+}
+.header-layout .menu-wrap .dropdown-menu li:hover span{
+    display: inline-block;
+}
+.header-layout .menu-wrap .dropdown-menu .active a{
+    background: #FFF;
+    padding-right: 0px;
+}
+.header-layout .menu-wrap .dropdown .dropdown-menu .active>a>i{
+    color: #47A0EB;
+}
+.header-layout .menu-wrap .default-menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+/*@media (min-width: 1440px) {*/
+/*    .header-layout .menu-wrap .default-menu{left: 220px}*/
+/*}*/
+/*@media (max-width: 1439px) {*/
+/*    .header-layout .menu-wrap .default-menu{left: 304px}*/
+/*}*/
+.header-layout .menu-wrap .default-menu{left: 350px}
+
+.header-layout .menu-wrap .default-menu>li{
+    vertical-align: top;
+    display: inline-block;
+    height: 90px;
+    width: 150px;
+    margin: 0px;
+    padding: 10px 0px;
+    border: 0;
+    opacity: .8;
+}
+
+.header-layout .menu-wrap .default-menu>li > a {
+    display: block;
+}
+
+.header-layout .menu-wrap .default-menu .active {
+    background-color: rgba(255, 255, 255, .3);
+    opacity: 1;
+}
+
+.header-layout .menu-wrap .default-menu>li:hover,.header-layout .menu-wrap .dropdown a:hover{
+    background-color: rgba(255, 255, 255, .3);
+    opacity: 1;
+}
+
+.header-layout .menu-wrap .default-menu>li .menu {
+    margin-top: 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.header-layout .menu-wrap .default-menu>li i {
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-size: 28px!important;
+}
+
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1; 
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+h2 {
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: lightblue; 
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+/* footer */
+footer {
+    height: 44px;
+    position: fixed;
+    right: 0px;
+    left: 240px;
+    bottom: 0px;
+    background: #F8F9FF;
+    color: white;
+    z-index: 99
+}
+footer a {
+    color: #555; 
+}
+footer a:hover {
+    color: #222; 
+}
+footer small {
+    font-size: 14px;
+    font-weight: 600;
+    color:#999999;
+    line-height: 44px;
+    padding-left: 20px;
+    float: left; 
+}
+footer ul {
+    font-size: 12px;
+    font-weight: 400;
+    color:#999999;
+    line-height: 44px;
+    padding-left: 15px;
+    float: right;
+    list-style: none; 
+}
+footer ul li {
+    float: right;
+    margin-left: 15px; 
+}
